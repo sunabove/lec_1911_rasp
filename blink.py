@@ -27,7 +27,7 @@ try:
         time.sleep(1)                   # Delay for 1 second
         print("\b", end = '', flush=True)
     pass
-# 키보드 예외 검출
+# 예외 검출
 except Exception :
     print( "\nExit program." )
 pass
