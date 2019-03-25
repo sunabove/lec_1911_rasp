@@ -21,8 +21,7 @@ try:
         print("+", end = '', flush=True )
         GPIO.output(led_pin, GPIO.HIGH) # Turn LED on
         time.sleep(1)                   # Delay for 1 second
-        print("\b", end = '', flush=True)
-        print("-", end = '', flush=True)
+        print("\b-", end = '', flush=True)
         GPIO.output(led_pin, GPIO.LOW)  # Turn LED off
         time.sleep(1)                   # Delay for 1 second
         print("\b", end = '', flush=True)

@@ -11,8 +11,7 @@ while True:
     print("+", end = '', flush=True )
     sleep(1)
     led.off()
-    print("\b", end = '', flush=True)
-    print("-", end = '', flush=True)
+    print("\b-", end = '', flush=True)
     sleep(1)
     print("\b", end = '', flush=True)
 pass
