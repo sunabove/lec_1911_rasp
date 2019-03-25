@@ -5,10 +5,15 @@ from time import sleep
 
 led = LED(17)
 
+print( "Press Ctrl + C to quit! ")
 while True:
     led.on()
+    print("+", end = '', flush=True )
     sleep(1)
     led.off()
+    print("\b", end = '', flush=True)
+    print("-", end = '', flush=True)
     sleep(1)
+    print("\b", end = '', flush=True)
 pass
  
