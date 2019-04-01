@@ -15,6 +15,8 @@ GPIO.setmode(GPIO.BCM)
 # Set LED pin as output
 GPIO.setup(led_pin, GPIO.OUT)
 
+print( "Press Ctrl + C to quit! ")
+
 # Blink forever
 while True:
     print("+", end = '', flush=True )
