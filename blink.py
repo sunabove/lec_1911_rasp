@@ -1,7 +1,7 @@
 # coding: utf-8
 from gpiozero import LED
 from time import sleep
-led = LED(17)
+led = LED(18)
 print( "Press Ctrl + C to quit! ")
 while True:
     led.on()
