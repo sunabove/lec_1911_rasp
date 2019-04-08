@@ -4,7 +4,7 @@
 from gpiozero import *
 from time import sleep
 
-sensor = MotionSensor( 4 )
+sensor = MotionSensor( 16 )
 
 idx = 0 ; 
 while 1 :
