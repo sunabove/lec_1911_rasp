@@ -4,11 +4,12 @@
 from gpiozero import *
 from time import sleep
 
-sensor = MotionSensor( 16 )
+sensor = MotionSensor( 4 )
 
 idx = 0 ; 
 while 1 :
     idx += 1 
+    print( "sensor value = %f" % sensor.value )
     print( "[%03d] : Waiting for motion ..." % idx )
     sensor.wait_for_motion()
     print( "[%03d] : It's light! :)" % idx  ) 
