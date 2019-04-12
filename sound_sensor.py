@@ -7,3 +7,5 @@ ultrasonic = DistanceSensor(echo=17, trigger=4)
 
 while 1 :
     print(ultrasonic.distance)
+
+    
