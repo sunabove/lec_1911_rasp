@@ -1,0 +1,5 @@
+# coding: utf-8
+from guizero import App
+
+app = App(title="Hello world")
+app.display()
