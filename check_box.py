@@ -23,3 +23,4 @@ cost_of_extras = Text(app, text="Cost of extras:")
 cost = TextBox(app, text="0")
 
 app.display()
+
