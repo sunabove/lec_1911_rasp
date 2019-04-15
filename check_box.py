@@ -10,7 +10,6 @@ def calculate_extras():
         total += 50
     cost.value = total
 
-
 app = App()
 
 questions = Text(app, text="What would you like with your coffee?")
