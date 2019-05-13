@@ -19,17 +19,7 @@ d = Drawing(app, width=width, height=height)
 w = width
 h = height
         
-d.rectangle( 0, 0, w, h, color="light blue", outline=True, outline_color="white")
-
-if 0 : 
-    d.oval(30, 30, 50, 50, color="white", outline=True)
-    d.oval(170, 30, 190, 50, color="white", outline=True)
-    d.triangle(110, 90, 120, 110, 100, 110, color="black")
-    d.line(50, 180, 50, 160, color="red", width=5)
-    d.line(50, 180, 170, 180, color="red", width=5)
-    d.line(170, 180, 170, 160, color="red", width=5)
-    d.text(10, 10, "Hello", color="red", size=12) 
-pass
+d.rectangle( 0, 0, w, h, color="light blue", outline=True, outline_color="white") 
 
 # GPIO 초기화 
 GPIO.setwarnings(False)
@@ -93,8 +83,7 @@ def update_screen() :
     d.text( x, y, text, color="white", font="Helvetica 24 bold", size=50 ) 
 
     x = w*3/5 + 200 
-    d.text( x, y, "°C", color="white", font="Helvetica 24 bold", size=20 )
-        
+    d.text( x, y, "°C", color="white", font="Helvetica 24 bold", size=20 )        
 
     # 1000 mili sec 후에 시간을 업데이트 한다.
     d.after(1000, update_screen ) 
